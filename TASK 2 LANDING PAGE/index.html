@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shravani Desai | Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fefefe;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .top-bar .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1d3557;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #457b9d;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #a8dadc, #f1faee);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      padding: 0 10%;
+      animation: fadeIn 1.5s ease-in;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      max-width: 60%;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content h1 span {
+      color: #1d3557;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact-logos {
+      margin-top: 10px;
+      font-size: 28px;
+    }
+
+    .contact-logos i {
+      margin-right: 20px;
+      color: #1d3557;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-logos i:hover {
+      transform: scale(1.2);
+    }
+
+    .hero-img img {
+      width: 300px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn {
+      background-color: #1d3557;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #457b9d;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #1d3557;
+    }
+
+    .projects-section .project-card {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f1faee;
+      border-left: 5px solid #1d3557;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-info p, .contact-info a {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #1a1a1a;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      background-color: #1d3557;
+      color: white;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #457b9d;
+    }
+
+    .footer-portfolio {
+      text-align: center;
+      padding: 40px 0 20px;
+    }
+
+    .footer-portfolio .btn {
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top-bar">
+    <div class="logo">Shravani Desai</div>
+    <nav>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Shravani Desai</span></h1>
+      <p>A passionate Computer Science student aspiring to become a Full Stack Developer.</p>
+
+      <!-- Contact Logos -->
+      <div class="contact-logos">
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-phone-alt"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+    </div>
+   
+
+    <!-- Image Section -->
+    <div class="hero-img">
+      <img src="ME.jpg" alt="Shravani Desai">
+    </div>
+  </section>
+  <div class="footer-portfolio">
+    <a href="http://shravaniiportfolio.netlify.app" class="btn" target="_blank">Visit My Portfolio</a>
+  </div>
+  
+
+  <section id="bio" class="bio-section">
+    <h2>Bio</h2>
+    <p>
+      I am a B.Tech Computer Science student at MIT Academy of Engineering, Pune (2024–2028). Passionate about developing smart digital solutions, I have worked on two major projects: a Smart Energy Conservation System using IoT and a Pre-ordering & Seat Booking System for college canteens. I enjoy solving real-world problems with technology and have honed my skills through internships with IBM SkillsBuild and Anudip Foundation.
+    </p>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Smart Energy Conservation System using IoT</h3>
+      <p>Used ESP8266 and BLYNK app to remotely monitor and control four lighting zones in homes/offices, promoting energy efficiency and sustainability.</p>
+    </div>
+    <div class="project-card">
+      <h3>Pre-ordering & Seat Booking System for College Canteen</h3>
+      <p>Developed a web platform that allows students to reserve canteen seats and order meals in advance, reducing wait time and crowding.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    
+
+    <form class="contact-form">
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Phone">
+      <input type="text" placeholder="Address">
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Type your message here"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+
+
+  <footer>
+    &copy; 2025 Shravani Desai. All Rights Reserved.
+  </footer>
+</body>
+</html>
