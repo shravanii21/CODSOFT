@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f3f3;
+  color: #000;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.toggle-container {
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.hero-section {
+  background: url('IMG/background.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+  color: rgb(11, 11, 11);
+}
+
+body.dark-mode .hero-section {
+  color: rgb(19, 16, 16);
+}
+
+.corner-name {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(3, 2, 2);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: rgb(11, 6, 6);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-content {
+  margin-top: 100px;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: rgb(12, 12, 12);
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+.hero-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: rgb(248, 244, 244);
+  color: #30056d;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .section {
+  background: #1e1e1e;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* About Me Centered Section */
+.about-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.about-centered .profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+.edu-box-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.edu-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  background: #f0f0f0;
+}
+
+body.dark-mode .edu-box {
+  background: #292929;
+  border-color: #444;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.skill img {
+  width: 40px;
+  height: 40px;
+}
+
+.bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.bar div {
+  height: 100%;
+  background-color: #031e52;
+}
+
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  font-weight: 500;
+}
+
+.ask-button, .resume-download {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px auto;
+  background: #10015d;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ask-button:hover, .resume-download:hover {
+  background-color: #04225b;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ======================== */
+/* 🌙 DARK MODE STYLING 🌙 */
+/* ======================== */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .section {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+
+body.dark-mode .hero-section {
+  background-color: #111;
+}
+
+body.dark-mode .btn,
+body.dark-mode .ask-button,
+body.dark-mode .resume-download,
+body.dark-mode #toggle-mode {
+  background-color: #100f0f;
+  color: white;
+  border: 1px solid #d1c9c9;
+}
+
+body.dark-mode a {
+  color: #060606;
+}
+
+body.dark-mode .edu-box {
+  background-color: #292929;
+  border: 1px solid #444;
+}
+
+body.dark-mode .skill .bar div {
+  background-color: #f9fcff;
+}
+
+body.dark-mode .footer {
+  background-color: #000;
+  color: #ccc;
+}
+#toggle-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #5290ed;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1000;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#toggle-mode:hover {
+  background-color: #e5ebf6;
+}
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.switch {
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider {
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.4s;
+}
+
+input[type="checkbox"]:checked + .switch .slider {
+  transform: translateX(24px);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+/* Icon colors */
+.hero-socials a i {
+  color: #10015d; /* Default icon color */
+  transition: color 0.3s ease;
+}
+
+.hero-socials a:hover i {
+  color: #2575fc; /* Icon color on hover */
+}
+
+/* Dark mode icon colors */
+body.dark-mode .hero-socials a i {
+  color: #ffffff;
+}
+
+body.dark-mode .hero-socials a:hover i {
+  color: #90caf9;
+}
